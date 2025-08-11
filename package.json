@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "node --env-file=.env dist/index.js",
+    "dev": "tsc -w & node --env-file=.env --watch dist/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "typescript": "^5.9.2"
+  }
+}
