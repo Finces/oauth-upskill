@@ -2,4 +2,8 @@ html
   head
     title= title
   body
-    h1= message
+    if user.isLoggedIn 
+      p= user.name
+      img(src=user.avatar)
+    else 
+      p You are not logged in!

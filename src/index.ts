@@ -7,7 +7,7 @@ const app = express();
 
 app.set('view engine', 'pug');
 
-app.get('/', home);
+app.get('/home', home);
 app.get('/auth/login', login);
 app.get('/auth/callback', callback);
 
