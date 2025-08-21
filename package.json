@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "tsc",
-    "start": "node --env-file=.env dist/index.js",
+    "start:authorization-code": "node --env-file=.env dist/authorization-code/index.js",
     "dev": "tsc -w & node --env-file=.env --watch dist/index.js"
   },
   "dependencies": {

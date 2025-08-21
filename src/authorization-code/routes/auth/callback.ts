@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { user } from '../../data/user';
 import { exchangeAuthorizationCode } from '../../actions/exchange-authorization-code';
 import { getUserInfo } from '../../actions/get-user-info';
+import { user } from '../../data/user';
 
 export async function callback(request: Request, response: Response): Promise<void> {
   const code = request.query.code as string;
